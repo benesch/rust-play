@@ -1,0 +1,12 @@
+[package]
+name = "rust-play"
+version = "0.1.0"
+authors = ["Nikhil Benesch <nikhil.benesch@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+differential-dataflow = { git = "https://github.com/TimelyDataflow/differential-dataflow.git" }
+timely = { git = "https://github.com/TimelyDataflow/timely-dataflow.git" }
+
+[patch."https://github.com/TimelyDataflow/timely-dataflow"]
+timely = { git = "https://github.com/benesch/timely-dataflow.git", branch = "sample" }
